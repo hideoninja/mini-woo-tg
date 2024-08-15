@@ -12,9 +12,9 @@ export default function OrderOverview() {
         <section className="order-overview">
             <div className="order-block">
                 <div className="order-header-wrap">
-                    <h2 className="order-header">Your Order</h2>
+                    <h2 className="order-header">Ваш заказ</h2>
                     <span className="order-edit"
-                          onClick={() => dispatch({type: "storefront"})}>Edit</span>
+                          onClick={() => dispatch({type: "storefront"})}>Изменить</span>
                 </div>
                 <div className="order-items">
                     {items}
@@ -24,13 +24,13 @@ export default function OrderOverview() {
                     <textarea
                         className="order-text-field order-block"
                         rows={1}
-                        placeholder="Add comment…"
+                        placeholder="Комментарий"
                         onChange={(e) =>
                             dispatch({type: "comment", comment: e.target.value})
                         }
                     ></textarea>
                 <div className="order-text-field-hint">
-                    Any special requests, details, final wishes etc.
+                    Добавьте пожелания по заказу, если посчитаете необходимым
                 </div>
             </div>
         </section>
