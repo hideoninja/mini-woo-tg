@@ -15,12 +15,12 @@
     "telegraf": "^4.14.0"
   },
   "devDependencies": {
-    "@types/telegram-web-app": "^6.9.1",
-    "@types/node": "latest",
-    "@types/react": "latest",
+    "@types/node": "22.5.0",
+    "@types/react": "18.3.4",
     "@types/react-dom": "latest",
+    "@types/telegram-web-app": "^6.9.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
-    "typescript": "latest"
+    "typescript": "5.5.4"
   }
 }
