@@ -3,10 +3,10 @@ import {message} from "telegraf/filters"
 import {LabeledPrice} from "@telegraf/types";
 import woo from "@/lib/woo";
 
-export const SECRET_HASH = process.env.TELEGRAM_BOT_SECRET!!
+export const SECRET_HASH = 'Age783ee63'
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || `https://${process.env.NEXT_PUBLIC_VERCEL_URL!!}`
 const WEBHOOK_URL = `${BASE_PATH}/api/telegram-hook?secret_hash=${SECRET_HASH}`
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN!!
+const BOT_TOKEN = '6157705355:AAGlAgYO8yrJH7HFBGW4E0PdD819mSQ0Kuc'
 const bot = new Telegraf(BOT_TOKEN)
 
 bot.start((ctx) => {
