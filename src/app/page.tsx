@@ -21,7 +21,7 @@ export default function Home() {
         const body = JSON.stringify({
             userId: user?.id,
             chatId: webApp?.initDataUnsafe.chat?.id,
-            invoiceSupported,
+            //invoiceSupported,
             comment: state.comment,
             shippingZone: state.shippingZone,
             items
